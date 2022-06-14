@@ -12,7 +12,7 @@
     <div class="wrapper">
 
         <header class="header-main">
-            <img class="header-logo" src="<?= get_template_directory_uri(); ?>/oNews/img/onews.svg" alt="Logo">
+            <img class="header-logo" src="<?= get_template_directory_uri(); ?>/assets/img/onews.svg" alt="Logo">
             <p class="header-title">O'Clock<br> students<br> news</p>
             <article class="header-article">
                 <h2 class="header-h2">Latest News <span class="header-span">From our students</span></h2>
@@ -22,12 +22,8 @@
                     sint? Itaque, ratione!
                 </p>
             </article>
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="#">Plan du site</a></li>
-                    <li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <nav class="header-nav" id="header-menu">
+                <?php wp_nav_menu( ['theme_location' => 'header-menu'] ); ?>
             </nav>
         </header>
 

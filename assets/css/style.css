@@ -1,0 +1,155 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.header-main {
+    background: url('../img/nicole.jpg') center center / contain no-repeat;
+    background-size: cover;
+    color: #eee;
+}
+.header-logo {
+    width: 30px;
+    float: left;
+    margin: 1rem 0.6rem auto 1rem;
+}
+.header-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2rem;
+    padding-top: 0.6rem;
+}
+.header-article {
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: right;
+    padding: 0.6rem;
+    margin: 3rem 1rem 1rem 1rem;
+    color: #333;
+}
+.header-h2 {
+    padding-left: 45%;
+}
+.header-span {
+    font-weight: 400;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+.header-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+.header-nav li {
+    list-style-type: none;
+    margin: 0 0.6rem;
+
+}
+.header-nav a {
+    color: #eee;
+    text-shadow: 1px 1px 3px #2a2a2a;
+}
+.header-nav a:hover {
+    transition: color .6s;
+    color: blue;
+}
+
+.main-section > h1 {
+    background-color: #f9f9f9;
+    padding: 0.3rem 1.2rem;
+    margin-bottom: 0;
+}
+
+.article, .article-unique {
+    padding: 0.9rem;
+}
+.article {
+    border: solid 1px #f9f9f9;
+    min-height: 48vh;
+}
+.article-button {
+    text-transform: uppercase;
+    padding: 0 0.3rem;
+    border: none;
+    border-radius: 6px;
+    color: #eee;
+    font-size: 0.9rem;;
+}
+.article-button.green {
+    background-color: #98dc62;
+}
+.article-button.red {
+    background-color: #dc5e53;
+}
+
+.article-button.blue {
+    background-color: #0766f0;
+}
+.article-author {
+    color: #2a2a2a;
+    margin: 0 0.3rem 0 0.6rem;
+}
+.article-img {
+    width: 9%;
+}
+.article-link {
+    font-weight: bold;
+}
+.article-time {
+    color: #666;
+    margin-left: 0.6rem;
+}
+
+
+/*** https://www.w3schools.com/css/css_rwd_mediaqueries.asp ***/
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .header-h2 {
+        font-size: 0.9rem;
+    }
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        /*height: 100vh;*/
+    }
+    header, section {
+        flex: 1;
+    }
+    .header-main {
+        position: fixed;
+        width: 50%;
+        min-height: 100vh;
+    }
+    .main-section > h1 {
+        margin-left: 50%;
+    }
+    .header-article {
+        margin-top: 30%;
+    }
+    .header-nav ul {
+        padding-top: 33%;
+    }
+    .container-article {
+        margin-left: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article {
+        width: 50%;
+    }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {} 
+
+/* Fin */
